@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ html {
 body {
   min-width: 320px;
   color: #6c757d;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body span.highlight {
   color: #54a0ff;
@@ -25,7 +27,7 @@ h4,
 h5,
 h6 {
   color: #343a40;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -76,7 +78,7 @@ main section {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 0 1rem;
   border-bottom: 1px solid #f3f4f5;
   padding-top: 5rem;
@@ -87,6 +89,20 @@ main section .section-heading {
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
+
+.section_part1 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.section_part2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.section_part3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
 main section#welcome-section h1 div:first-child {
   font-size: 2.5rem;
   font-weight: 500;
@@ -162,22 +178,22 @@ main section#skills .icons i {
   margin-right: 1rem;
   font-size: 3rem;
 }
-main section#skills .icons i.fa-html5:hover {
+main section#skills .icons i.fa-html5 {
   color: #e9633c;
 }
-main section#skills .icons i.fa-css3-alt:hover {
+main section#skills .icons i.fa-css3-alt {
   color: #2862e9;
 }
-main section#skills .icons i.fa-js:hover {
+main section#skills .icons i.fa-js {
   color: #f1d43b;
 }
-main section#skills .icons i.fa-react:hover {
+main section#skills .icons i.fa-react {
   color: #49b7e8;
 }
 /* main section#skills .icons i.fa-bootstrap:hover {
   color: #533b78;
 } */
-main section#skills .icons i.fa-python:hover {
+main section#skills .icons i.fa-python {
   color: #ffff00;
 }
 /* main section#skills .icons i.fa-sass:hover {
@@ -202,10 +218,18 @@ main section#projects .project-container {
 main section#projects .project-container .project-tile a img {
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border: 1px solid #f3f4f5;
+  padding: 0.5rem;
+  background-color: #fff;
+  cursor: pointer;
 }
 main section#projects .project-container .project-tile a img:hover {
-  filter: grayscale(0);
+  filter: grayscale(100%);
 }
 
 @media screen and (min-width: 480px) {
